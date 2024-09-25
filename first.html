@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="first.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon</title>
+    <style>
+        input[type="radio"] {
+            display: none; /* Hide the radio buttons */
+        }
+    </style>
+</head>
+<body>
+    
+        <div class = "main_container">
+            <div class = "right_slider">
+                <main>
+                    <div class="content">
+                        <!--Text slider-->
+                       <div class = "slider">
+                            <div class = "slides">
+                                 <!--radio buttons-->
+                               
+                                 <input type="radio" name="radio-btn" id="radio1">
+                                 <input type="radio" name="radio-btn" id="radio2">
+                                 <input type="radio" name="radio-btn" id="radio3">
+                                 <input type="radio" name="radio-btn" id="radio4">
+                 
+                                <!--texts-->
+                                <div class = "slide first">
+                                    <h1>streaming a 1-hour video emits about 0.1 kg of CO2.</h1>
+                                </div>
+                                <div class = "slide second">
+                                    <h1>The fashion industry contributes about 10% of global carbon emissions</h1>
+                                </div>
+                                <div class = "slide third">
+                                    <h1>Container ships emit as much CO2 as all of Europe’s cars combined</h1>
+                                </div>
+                                <div class = "slide fourth">
+                                    <h1>For every 1 kg of food waste, about 1.5 kg of CO2 equivalent is emitted.</h1>
+                                </div>
+                               
+                                <!--auto-navigation-->
+                                <div class = "navigation-auto">
+                                    <div class = "auton-btn1"></div>
+                                    <div class = "auton-btn2"></div>
+                                    <div class = "auton-btn3"></div>
+                                    <div class = "auton-btn4"></div>
+                                </div>
+                                <div class = "manual-navigation">
+                                    <label for = "radio1" class = "manual-btn"></label>
+                                    <label for = "radio2" class = "manual-btn"></label>
+                                    <label for = "radio3" class = "manual-btn"></label>
+                                    <label for = "radio4" class = "manual-btn"></label>
+                                </div>
+                                
+                            </div>
+                </main>
+    
+            </div>
+            
+        <div class="Container">
+            <h1>Carbon Consumption Calculator</h1>
+        <div class="form-group">
+            <label for="electricity">Electricity Consumption (kWh):</label>
+            <input type="number" id="electricity" step="0.1" placeholder="Enter kWh">
+        </div>
+        <div class="form-group">
+            <label for="miles">Miles Driven:</label>
+            <input type="number" id="miles" step="0.1" placeholder="Enter miles">
+        </div>
+        <div class="form-group">
+            <label for="milesPerGallon">Fuel Efficiency (miles per gallon):</label>
+            <input type="number" id="milesPerGallon" step="0.1" placeholder="Enter miles per gallon">
+        </div>
+        <div class="form-group">
+            <label for="gasHeating">Natural Gas Used for Heating (cubic meters):</label>
+            <input type="number" id="gasHeating" step="0.1" placeholder="Enter cubic meters">
+        </div>
+        <div class="form-group">
+            <input type="button" value="Calculate Emissions" onclick="calculateEmissions()">
+        </div>
+        <div class="result" id="result">
+            <h2 id="resultText">Enter your data and click "Calculate Emissions" to see results.</h2>
+        </div>
+        
+            
+            <h1 class="H1">Carbon Consumption</h1>
+            <canvas id="carbonChart"></canvas>
+            <!-- <script src="script.js"></script> -->
+            <script src="graph.js"></script>
+        
+       
+        <br><br>
+           
+        </div>
+        </div>
+    
+<script src = "first.js"></script>
+</body>
+</html>

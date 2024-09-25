@@ -1,0 +1,212 @@
+body {
+    font-family: 'Macondo';
+    background-color: #F6EACB;
+    color: #333;
+    margin: 0; 
+}
+
+.subbody{
+    display: flex;
+
+}
+
+.macondo-regular {
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  .montserrat-main-section {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: bold;
+  }
+.sidebar {
+    width: 250px;
+   background-color: #F6EACB;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;   
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.heading{
+    padding-top: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #000;
+}
+
+.user-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.date-selector button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.date-selector button.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.summary-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.summary-text p {
+    font-size: 18px;
+    color: #888;
+}
+
+.summary-chart {
+    width: 50%;
+    height: 100px;
+    /* Placeholder for chart */
+    background: url('chart-placeholder.png') no-repeat center center;
+    background-size: cover;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carbon-footprint {
+    width: 60%;
+}
+
+.carbon-footprint h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#footprintChart {
+    width: 100%;
+    height: 200px;
+    background-color: #eaeaea; /* Placeholder */
+}
+
+.tips {
+    width: 35%;
+}
+
+.tips h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tips p {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tips ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.tips ul li strong {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.main-content{
+    background-image: url('assets/forest_2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    /* opacity: 0.8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+
+.title,.tagline{
+    align-self:self-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    color: white;
+    z-index: 1;
+    padding: 15px;
+}
+.tagline{
+    font-weight: 200;
+}
+.footer{
+    background-color: #F6EACB;
+}
+.my-4{
+    
+}
+.py-3.my-4{
+    background-color: #F6EACB;
+
+}
