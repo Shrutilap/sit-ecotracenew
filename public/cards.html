@@ -22,6 +22,66 @@
                 console.error('Error fetching tips:', error);
             }
         }
+          async function fetchPagemining() {
+            try {
+                const response = await fetch('/mining');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const html = await response.text();
+                document.body.innerHTML = html; // Replace current page content with the fetched HTML
+            } catch (error) {
+                console.error('Error fetching tips:', error);
+            }
+        }
+          async function fetchPagefootprint() {
+            try {
+                const response = await fetch('/footprint');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const html = await response.text();
+                document.body.innerHTML = html; // Replace current page content with the fetched HTML
+            } catch (error) {
+                console.error('Error fetching tips:', error);
+            }
+        }
+          async function fetchPagerewards() {
+            try {
+                const response = await fetch('/rewards');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const html = await response.text();
+                document.body.innerHTML = html; // Replace current page content with the fetched HTML
+            } catch (error) {
+                console.error('Error fetching tips:', error);
+            }
+        }
+          async function fetchPageprogress() {
+            try {
+                const response = await fetch('/progress');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const html = await response.text();
+                document.body.innerHTML = html; // Replace current page content with the fetched HTML
+            } catch (error) {
+                console.error('Error fetching tips:', error);
+            }
+        }
+          async function fetchPagedashboard() {
+            try {
+                const response = await fetch('/dashboard');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const html = await response.text();
+                document.body.innerHTML = html; // Replace current page content with the fetched HTML
+            } catch (error) {
+                console.error('Error fetching tips:', error);
+            }
+        }
     </script>
 </head>
 <body>
@@ -46,7 +106,7 @@
                 <div class = "upper_right1">
                     <div class = "dash">
                         <div class = "dash_logo"><img  class = "dashlogo" src = "./assets/dashboard1.png", height="120px", width="120px"></div>
-                        <div><a href = "#" class = "login-link">Dashboard</a></div>
+                        <div><a href = "#" onclick="fetchPagedashboard()" class = "login-link">Dashboard</a></div>
                     </div>
                     
                 </div>
@@ -55,7 +115,7 @@
                         <img class = "Designerlogo" src = "assets/Designer.png", height="120px", width="120px">
                     </div>
                     <div class = "dash">
-                        <a href = "#" class = "login-link">Footprint</a>
+                        <a href = "#" onclick="fetchPagefootprint()" class = "login-link">Footprint</a>
                     </div>
                 </div>
                 <div class = "upper_right3">
@@ -64,7 +124,7 @@
                             <img class = "winlogo" src = "./assets/star.png", height="120px", width="120px">
                         </div>
                         <div class = "wintext">
-                            <a href = "#" class = "login-link">Win exciting <br> <span>offers!</span></a>
+                            <a href = "#" onclick="fetchPagerewards()" class = "login-link">Win exciting <br> <span>offers!</span></a>
                         </div>
                         
                     </div>
@@ -76,13 +136,13 @@
                 <div class = "lower_right1">
                     <div class = "mine">
                         <div class = "mine_logo"><img class = "minelogo" src = "./assets/mining1.png", height="120px", width="120px"></div>
-                        <div class = "mine_text"><a href = "#" class = "login-link">Mining</a></div>
+                        <div class = "mine_text"><a href = "#" onclick="fetchPagemining()" class = "login-link">Mining</a></div>
                     </div>
                 </div>
                 <div class = "lower_right2">
                     <div class = "progress">
                         <div class = "prog_logo"><img class = "dashlogo" src = "/assets/bar.png", height="120px", width="120px"></div>
-                        <div class = "proglink"><a href = "#" class = "login-link">Progress</a></div>
+                        <div class = "proglink"><a href = "#" onclick="fetchPageprogress()" class = "login-link">Progress</a></div>
                         
                     </div>
                 </div>
