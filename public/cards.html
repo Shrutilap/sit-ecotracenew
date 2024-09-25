@@ -9,6 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     
     <title>Home</title>
+    <script>
+        async function fetchPagetips() {
+            try {
+                const response = await fetch('/tips');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const html = await response.text();
+                document.body.innerHTML = html; // Replace current page content with the fetched HTML
+            } catch (error) {
+                console.error('Error fetching tips:', error);
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- <div class="topnav">
@@ -75,7 +89,7 @@
                 <div class = "lower_right3">
                     <div class="tips">
                         <div class = "tip_logo"><img class = "tiplogo" src = "./assets/idea.png", height="120px", width="120px"></div>
-                        <div class = "tiplink"><a href = "#" class = "login-link">Tips</a></div>
+                        <div class = "tiplink"><a href="#" onclick="fetchPagetips()" class = "login-link">Tips</a></div>
                         
                     </div>
 
