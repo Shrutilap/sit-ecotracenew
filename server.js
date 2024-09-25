@@ -32,9 +32,17 @@ app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'home.html'));  
 });
 
+app.get('/cards', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'cards.html'));
+});
 app.get('/login', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'login_actual.html'));
+});
+app.get('/tips', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'tips.html'));
 });
 // Log database connection details (for debugging)
 console.log('Database Connection Details:', {
