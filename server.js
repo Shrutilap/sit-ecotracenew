@@ -28,6 +28,7 @@ app.get('/', (req, res) => {
     res.redirect('/register');
 });
 
+
 app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'home.html'));  
 });
@@ -43,6 +44,26 @@ app.get('/login', (req, res) => {
 app.get('/tips', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'tips.html'));
+});
+app.get('/mining', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'mining.html'));
+});
+app.get('/progress', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'progress.html'));
+});
+app.get('/dashboard', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+});
+app.get('/footprint', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'footprint.html'));
+});
+app.get('/rewards', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'rewards.html'));
 });
 // Log database connection details (for debugging)
 console.log('Database Connection Details:', {
