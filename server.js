@@ -17,25 +17,70 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/main', (req, res) => {
+    console.log("serving home.html");
+    res.sendFile(path.join(__dirname, 'public', 'mainpage.html')); // Ensure this path matches where home.html is located
+});
 // Serve the login.html page at the /register route
 app.get('/register', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
+app.get('/choose', (req, res) => {
+    console.log("popup");
+    res.sendFile(path.join(__dirname, 'public', 'popup&form.html'));
+});
+
+
 // Root route to redirect to /register
 app.get('/', (req, res) => {
-    res.redirect('/register');
+    res.redirect('/main');
 });
 
 app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'home.html'));  
+    res.sendFile(path.join(__dirname, 'public', 'cards.html'));  
 });
 
 app.get('/login', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'login_actual.html'));
 });
+
+// app.get('/cards', (req, res) => {
+//     console.log("serving login.html");
+//     res.sendFile(path.join(__dirname, 'public', 'cards.html'));
+// });
+
+app.get('/tips', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'tips.html'));
+});
+
+app.get('/mining', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'mining.html'));
+});
+
+app.get('/progress', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'progress.html'));
+});
+
+app.get('/dashboard', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+});
+
+app.get('/footprint', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'footprint.html'));
+});
+app.get('/rewards', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'rewards.html'));
+});
+
 // Log database connection details (for debugging)
 console.log('Database Connection Details:', {
     user: process.env.DB_USER,
