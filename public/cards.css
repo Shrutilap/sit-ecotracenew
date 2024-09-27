@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     background-color: white;
+=======
+    background-color: #FFFBE6;
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
     margin: 0;
 }
 
@@ -10,8 +14,13 @@ body{
 
 .leftmost {
     width: 30%;
+<<<<<<< HEAD
     /* margin: 20px; */
     /* display: flex; */
+=======
+    margin: 20px;
+    display: flex;
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
     border-radius: 20px;
     flex-direction: column;
 }
@@ -19,8 +28,13 @@ body{
     background-color: #476827;
 }
 .login{
+<<<<<<< HEAD
     padding-top: 30%;
     /* padding-left: 20%; */
+=======
+    padding-top: 70%;
+    padding-left: 20%;
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
     padding-right: 20%;
     font-size: xx-large;
     
@@ -46,7 +60,11 @@ body{
 
 }
 .login-link {
+<<<<<<< HEAD
     color: rgb(254, 254, 254); 
+=======
+    color: black; 
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
     text-decoration: none;
 }
 /* .win{
@@ -64,7 +82,11 @@ body{
 
 }
 .login-link:hover {
+<<<<<<< HEAD
     background-color: #a0cc75;
+=======
+    background-color: #476827;
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
     text-decoration: none;
     border-radius: 10px;
 }
@@ -359,6 +381,7 @@ body{
     }
     .mine_text, .tiplink, .proglink {
         padding-left: 5%;
+<<<<<<< HEAD
     }
 }
 
@@ -409,3 +432,7 @@ body{
         height: 60px;
     }
 } */
+=======
+      }
+}
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275

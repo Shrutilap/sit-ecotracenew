@@ -38,40 +38,60 @@ app.get('/', (req, res) => {
     res.redirect('/main');
 });
 
+
 app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'cards.html'));  
 });
 
+app.get('/cards', (req, res) => {
+    console.log("serving login.html");
+    res.sendFile(path.join(__dirname, 'public', 'cards.html'));
+});
 app.get('/login', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'login_actual.html'));
 });
+<<<<<<< HEAD
 
 // app.get('/cards', (req, res) => {
 //     console.log("serving login.html");
 //     res.sendFile(path.join(__dirname, 'public', 'cards.html'));
 // });
 
+=======
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
 app.get('/tips', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'tips.html'));
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
 app.get('/mining', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'mining.html'));
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
 app.get('/progress', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'progress.html'));
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
 app.get('/dashboard', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
 app.get('/footprint', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'footprint.html'));
@@ -80,7 +100,10 @@ app.get('/rewards', (req, res) => {
     console.log("serving login.html");
     res.sendFile(path.join(__dirname, 'public', 'rewards.html'));
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> c23fd5f934dff3234e52b37bf83dee9a0d5f7275
 // Log database connection details (for debugging)
 console.log('Database Connection Details:', {
     user: process.env.DB_USER,
