@@ -1,0 +1,5 @@
+node
+chart.js
+streamlit
+google-generativeai
+express
